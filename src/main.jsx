@@ -11,6 +11,7 @@ import { HeadStudentRecords } from "./components/department_head/head_dashboard/
 import { HeadBatchManagement } from "./components/department_head/head_dashboard/HeadBatchManagement.jsx";
 import { HeadLogout } from "./components/department_head/head_dashboard/HeadLogout.jsx";
 import { HeadReports } from "./components/department_head/head_dashboard/HeadReports.jsx";
+import { HeadSettings } from "./components/department_head/head_dashboard/HeadSettings.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: "batch-management", element: <HeadBatchManagement /> },
       { path: "enrollment-officers", element: <HeadOfficers /> },
       { path: "reports", element: <HeadReports /> },
+      { path: "settings", element: <HeadSettings /> },
     ],
   },
   { path: "/logout", element: <HeadLogout /> },
